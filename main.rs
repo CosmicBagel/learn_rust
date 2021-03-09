@@ -1,8 +1,13 @@
-use std::{io::{self, Write}};
+fn main () {
+    let width1 = 30;
+    let height1 = 50;
 
-fn main() -> io::Result<()>{
-    let mut term = terminal::stdout();
-    term.write_all(b"a whole new world")?;
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        area(width1, height1)
+    )
+}
 
-    Ok(())
+fn area(width: u32, height: u32) -> u32 {
+    width * height
 }
