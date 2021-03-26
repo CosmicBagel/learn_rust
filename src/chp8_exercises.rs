@@ -1,7 +1,5 @@
 use std::io::Write;
 
-
-
 fn main() {
     calcs();
     pig_latin();
