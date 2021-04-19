@@ -3,10 +3,3 @@
 [[package]]
 name = "adder"
 version = "0.1.0"
-
-[[package]]
-name = "alpine_cosmodrome"
-version = "0.1.0"
-dependencies = [
- "adder",
-]
