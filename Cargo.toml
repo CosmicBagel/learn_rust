@@ -8,4 +8,4 @@ edition = "2018"
 
 [dependencies]
 # cargo_name = "0.1.0"
-adder = {path = "adder" }
+# adder = {path = "adder" }
