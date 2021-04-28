@@ -1,9 +1,9 @@
 use std::env;
 use std::process;
 
-use alpine_cosmodrome::Config;
+use learn_rust::Config;
 
-static EXPECTED_USAGE: &str = "Expected usage: alpine_cosmodrome <search_query> <file_name>";
+static EXPECTED_USAGE: &str = "Expected usage: learn_rust <search_query> <file_name>";
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -12,7 +12,7 @@ fn main() {
         process::exit(1);
     });
 
-    if let Err(e) = alpine_cosmodrome::run(config) {
+    if let Err(e) = learn_rust::run(config) {
         eprintln!("Application error: {}", e);
         process::exit(1);
     }
